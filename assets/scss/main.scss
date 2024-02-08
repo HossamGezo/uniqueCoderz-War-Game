@@ -1,0 +1,62 @@
+// Import All Using Helpers Directory
+@use "helpers/usinghelpers" as *;
+@use "helpers/global";
+
+// Begining Of The Project
+
+.war {
+  @include flex(null, null, center, center, 30px);
+  .fighter {
+    background-color: color(wht-color-01);
+    min-width: 700px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: map-get($boxshadow-breakpoints, boxshadow-01);
+    border: 2px solid lighten(color(blk-color-02), 10%);
+    .progress {
+      height: 35px;
+      background-color: color(gry-color-01);
+      margin-bottom: 20px;
+      span {
+        display: block;
+        height: 100%;
+        background-color: color(grn-color-01);
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+    }
+    .controls {
+      .my-btn {
+        padding: 7px 25px;
+        background-color: color(blk-color-02);
+        color: color(wht-color-01);
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:hover {
+          background-color: darken(color(blk-color-02), 100%);
+        }
+        &:active {
+          background-color: color(blk-color-02);
+        }
+      }
+    }
+    .alive {
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      color: color(gry-color-10);
+    }
+  }
+}

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+  background-color: #F1F5F9;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  padding: 0 30px;
+  margin: 80px auto;
+}
+
+.war {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.war .fighter {
+  background-color: #FFFFFF;
+  min-width: 700px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: 2px solid #4d4d4d;
+}
+.war .fighter .progress {
+  height: 35px;
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+}
+.war .fighter .progress span {
+  display: block;
+  height: 100%;
+  background-color: #008000;
+}
+.war .fighter h2 {
+  margin-bottom: 20px;
+}
+.war .fighter img {
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.war .fighter .controls .my-btn {
+  padding: 7px 25px;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.war .fighter .controls .my-btn:first-child {
+  margin-right: 20px;
+}
+.war .fighter .controls .my-btn:hover {
+  background-color: black;
+}
+.war .fighter .controls .my-btn:active {
+  background-color: #333333;
+}
+.war .fighter .alive {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #777777;
+}/*# sourceMappingURL=main.css.map */
